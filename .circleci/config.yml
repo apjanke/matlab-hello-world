@@ -15,7 +15,7 @@ jobs:
             pyenv global 3.7.0
       - matlab/install
       - matlab/run-command:
-          command: addpath dev-kit; mypackage_launchtests
+          command: addpath dev-kit; hello_launchtests
       - matlab/run-tests:
           test-results-junit: test-results/matlab/results.xml
           code-coverage-cobertura: coverage
@@ -28,9 +28,4 @@ jobs:
           command: make dist
       - run:
           command: make clean
-      # start_MPT_targets
-      - run:
-          command: git reset --hard
-      - run:
-          command: ./MatlabProjectTemplate/test_project_initialization
-      # end_MPT_targets
+      

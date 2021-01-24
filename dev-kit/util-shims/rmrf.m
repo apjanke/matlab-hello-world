@@ -5,5 +5,5 @@ function rmrf(files)
 arguments
   files string
 end
-mypackage.internal.util.rmrf(files);
+hello.internal.util.rmrf(files);
 end

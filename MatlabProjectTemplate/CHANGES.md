@@ -22,7 +22,7 @@ Version 0.4.0 (2021-01-22)
 ---------------------------
 
 * Convert dev-kit and init_project_from_template to pure-Matlab implementations
-* Utility functions in +mypackage/+internal/+util
+* Utility functions in +hello/+internal/+util
 
 Version 0.3.5 (2021-01-21)
 ---------------------------
@@ -57,7 +57,7 @@ Version 0.3.0 (2021-01-20)
 Version 0.2.2 (2021-01-19)
 --------------------------
 
-* Fix class name munging for Mypackage* classes
+* Fix class name munging for Hello* classes
 
 Version 0.2.1 (2021-01-19)
 --------------------------

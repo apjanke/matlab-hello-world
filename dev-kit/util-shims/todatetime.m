@@ -45,5 +45,5 @@ arguments
   x
   zonePolicy (1,1) string = 'passthrough'
 end
-out = mypackage.internal.util.todatetime(x, zonePolicy);
+out = hello.internal.util.todatetime(x, zonePolicy);
 end

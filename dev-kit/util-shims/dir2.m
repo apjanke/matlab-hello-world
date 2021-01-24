@@ -18,6 +18,6 @@ function [names, details] = dir2(dirPath)
 %        bytes - size of file in bytes (double)
 %        isdir - whether file is a directory (logical)
 
-[names, details] = mypackage.internal.util.dir2(dirPath);
+[names, details] = hello.internal.util.dir2(dirPath);
   
 end
