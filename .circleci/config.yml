@@ -15,17 +15,5 @@ jobs:
             pyenv global 3.7.0
       - matlab/install
       - matlab/run-command:
-          command: addpath dev-kit; hello_launchtests
-      - matlab/run-tests:
-          test-results-junit: test-results/matlab/results.xml
-          code-coverage-cobertura: coverage
-          source-folder: Mcode
-      - store_test_results:
-          path: test-results
-      - run:
-          command: make test
-      - run:
-          command: make dist
-      - run:
-          command: make clean
+          command: addpath dev-kit; disp('Hello, world!')
       

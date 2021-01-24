@@ -4,16 +4,4 @@ steps:
       release: R2020a
   - task: RunMATLABCommand@0
     inputs:
-      command: addpath dev-kit; hello_launchtests
-  - task: RunMATLABTests@0
-    inputs:
-      testResultsJUnit: test-results/results.xml
-      codeCoverageCobertura: code-coverage/coverage.xml
-  - task: PublishTestResults@2
-    condition: succeededOrFailed()
-    inputs:
-      testResultsFiles: test-results/results.xml
-  - task: PublishCodeCoverageResults@1
-    inputs:
-      codeCoverageTool: Cobertura
-      summaryFileLocation: code-coverage/coverage.xml
+      command: addpath dev-kit; echo('Hello, world!')

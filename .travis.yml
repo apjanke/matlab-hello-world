@@ -3,11 +3,5 @@ matlab:
   - R2020a
   - R2020b
 script:
-  - matlab -batch "addpath dev-kit; hello_launchtests"
-  - make test
-  - make dist
-  - make toolbox
-  - make clean
+  - matlab -batch "addpath dev-kit; disp('Hello, world!');"
   
-# Remove this if you don't use codecov.io
-after_script: bash <(curl -s https://codecov.io/bash)
